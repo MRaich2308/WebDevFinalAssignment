@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Chips - Star Chips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sunflower-box">
+        <h1>Place Your Star Chips Order</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse Products</a>
+        <a href="order.html">Order Now</a>
+        <a href="feedback.html">Feedback & Contact</a>
+    </nav>
+
+    <main class="container">
+        <section id="order-form-section">
+            <h2 class="sunflower-box form-header">Welcome to the Order Page, please proceed with your order by using the form given as below, and we shall direct you for the next steps accordingly.</h2>
+
+            <form id="chipOrderForm" class="order-form">
+                <div class="form-group sunflower-box">
+                    <label for="customerName">Name of the Person/Organization:</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="email">Personal/Professional Mail Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="deliveryAddress">Delivery Address:</label>
+                    <textarea id="deliveryAddress" name="deliveryAddress" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="phone">Phone No.:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 9876543210" required>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="deliveryRemarks">Specific remarks for Delivery:</label>
+                    <textarea id="deliveryRemarks" name="deliveryRemarks" rows="2"></textarea>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="orderType">Type of Order:</label>
+                    <select id="orderType" name="orderType">
+                        <option value="personal">Personal</option>
+                        <option value="bulk">Bulk/Party</option>
+                        <option value="reseller">Reseller</option>
+                    </select>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="quantity">Quantity (in Kgs):</label>
+                    <input type="number" id="quantity" name="quantity" min="0.5" step="0.5" required>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="chipType">Type of Chips:</label>
+                    <select id="chipType" name="chipType" required>
+                        <option value="">--Select Chip Type--</option>
+                        <option value="ClassicSpicy">Classic Spicy Delight</option>
+                        <option value="TangyTomato">Tangy Tomato Tango</option>
+                        <option value="PeriPeriFire">Peri-Peri Fire Burst</option>
+                        <option value="CreamyOnion">Creamy Onion Dream</option>
+                        <option value="CustomMix">Custom Mix (Specify Below)</option>
+                        </select>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="packagingType">Type of Packaging:</label>
+                    <select id="packagingType" name="packagingType">
+                        <option value="standard">Standard Pouch</option>
+                        <option value="ecoFriendly">Eco-Friendly Pack</option>
+                        <option value="giftBox">Gift Box (Additional Cost)</option>
+                    </select>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="ingredientRemarks">Specific Remarks over making or use of ingredients (e.g., less salt, no garlic):</label>
+                    <textarea id="ingredientRemarks" name="ingredientRemarks" rows="2"></textarea>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="paymentMode">Payment Mode:</label>
+                    <select id="paymentMode" name="paymentMode">
+                        <option value="cod">Cash on Delivery (COD)</option>
+                        <option value="online">Online Payment (Details will be shared)</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="placeOrderBtn" class="submit-button">Place Order</button>
+                <p id="orderStatusMsg" class="order-status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>created and maintained by M.Raich for Star Chips</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Contact - Star Chips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sunflower-box">
+        <h1>Share Your Star Chips Experience</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse Products</a>
+        <a href="order.html">Order Now</a>
+        <a href="feedback.html">Feedback & Contact</a>
+    </nav>
+
+    <main class="container">
+        <section id="feedback-form-section">
+            <h2 class="sunflower-box form-header">Please consider submitting a feedback of your overall buying experience, and also share complaints or any sort of grievance that you have/had encountered while this overall shopping experience, and with the product.</h2>
+
+            <form id="feedbackForm" class="feedback-form">
+                <div class="form-group sunflower-box">
+                    <label for="feedbackName">Name:</label>
+                    <input type="text" id="feedbackName" name="feedbackName" required>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="feedbackOrderType">Type of Order (if applicable):</label>
+                    <input type="text" id="feedbackOrderType" name="feedbackOrderType">
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="feedbackChipType">Type of Chips (if applicable):</label>
+                    <input type="text" id="feedbackChipType" name="feedbackChipType">
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="purchaseDate">Purchase Date (if applicable):</label>
+                    <input type="date" id="purchaseDate" name="purchaseDate">
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="invoiceCopy">Copy of Invoice/Delivery Note/Cash Memo (Optional, upload image):</label>
+                    <input type="file" id="invoiceCopy" name="invoiceCopy" accept="image/*">
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="productImage">Image of the product (if issue related, upload image):</label>
+                    <input type="file" id="productImage" name="productImage" accept="image/*">
+                     <small>Max file size: 2MB. Standard formats: JPG, PNG, GIF.</small>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="productIssue">Issue with the Product (Describe in detail):</label>
+                    <textarea id="productIssue" name="productIssue" rows="4"></textarea>
+                </div>
+
+                <div class="form-group sunflower-box">
+                    <label for="shoppingExperience">Comments about overall shopping experience with Star Chips:</label>
+                    <textarea id="shoppingExperience" name="shoppingExperience" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Submit Feedback</button>
+            </form>
+        </section>
+
+        <section id="external-links" class="content-section">
+            <h2 class="sunflower-box">Valuable Resources</h2>
+            <div class="external-link-box sunflower-box">
+                <a href="https://www.fssai.gov.in/" target="_blank">Food Safety and Standards Authority of India (FSSAI)</a>
+            </div>
+            <div class="external-link-box sunflower-box">
+                <a href="https://consumeraffairs.nic.in/" target="_blank">National Consumer Helpline</a>
+            </div>
+        </section>
+
+        <section id="contact-details" class="sunflower-box">
+            <h2>Contact Star Chips</h2>
+            <p><strong>Address:</strong> [Esplanade Arcade, Tatibandh Enclave, Tatibandh, 492008], Raipur, Chhattisgarh</p> <p><strong>GST No.:</strong> [00000000]</p>
+            <p><strong>Phone Number:</strong> +91-0000000000</p>
+            <p><strong>Consumer eMail:</strong> contact@starchipsraipur.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>created and maintained by M.Raich for Star Chips</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
